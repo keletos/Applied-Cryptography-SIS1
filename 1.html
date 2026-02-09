@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AES Crypto Lab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #020617;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        select, textarea, input {
+            width: 100%;
+            margin-top: 8px;
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .row > div {
+            flex: 1;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            background: #2563eb;
+            color: white;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        .secondary {
+            background: #334155;
+        }
+
+        .secondary:hover {
+            background: #475569;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            opacity: 0.6;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>AES Encryption Demo</h1>
+
+    <div class="row">
+        <div>
+            <label>Key Size</label>
+            <select id="keySize">
+                <option value="128">AES-128</option>
+                <option value="192">AES-192</option>
+                <option value="256">AES-256</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Mode</label>
+            <select id="mode">
+                <option>ECB</option>
+                <option>CBC</option>
+                <option>CTR</option>
+                <option>GCM</option>
+            </select>
+        </div>
+    </div>
+
+    <label>Key (hex)</label>
+    <input id="keyInput" placeholder="e.g. 2b7e151628aed2a6abf7158809cf4f3c">
+
+    <div class="buttons">
+        <button class="secondary" onclick="generateKey()">Generate Key</button>
+    </div>
+
+    <label>Plaintext / Ciphertext</label>
+    <textarea id="inputText" placeholder="Enter text here..."></textarea>
+
+    <div class="buttons">
+        <button onclick="encrypt()">Encrypt</button>
+        <button onclick="decrypt()">Decrypt</button>
+    </div>
+
+    <label>Output</label>
+    <textarea id="outputText" readonly></textarea>
+
+    <footer>
+        Educational AES implementation • Not for production use
+    </footer>
+</div>
+
+<script>
+    function generateKey() {
+        const size = document.getElementById("keySize").value / 8;
+        let key = "";
+        for (let i = 0; i < size; i++) {
+            key += Math.floor(Math.random() * 256)
+                .toString(16)
+                .padStart(2, "0");
+        }
+        document.getElementById("keyInput").value = key;
+    }
+
+    function encrypt() {
+        alert("Encryption logic goes here (connect to your AES backend)");
+    }
+
+    function decrypt() {
+        alert("Decryption logic goes here (connect to your AES backend)");
+    }
+</script>
+
+</body>
+</html>
