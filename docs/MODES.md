@@ -509,5 +509,3 @@ byte[] encrypted = gcm.encryptWithAAD(plaintext, key, aad);
 - [FIPS 197](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf) - AES Specification
 
 ---
-
-*Last updated: February 2026*
