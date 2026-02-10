@@ -70,16 +70,16 @@ Educational implementation of AES (Advanced Encryption Standard) with multiple m
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/mycrypto.git
+git clone https://github.com/keletos/Applied-Cryptography-SIS1.git
 
 # Navigate to project directory
-cd mycrypto
+cd Applied-Cryptography.git
 
 # Compile the project
 javac -d bin -sourcepath src src/**/*.java
 
 # Run the application
-java -cp bin Main
+java -cp bin test.AESConsoleApp
 ```
 
 ### Option 2: Download ZIP
