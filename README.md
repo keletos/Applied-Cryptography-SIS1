@@ -73,7 +73,7 @@ Educational implementation of AES (Advanced Encryption Standard) with multiple m
 git clone https://github.com/keletos/Applied-Cryptography-SIS1.git
 
 # Navigate to project directory
-cd Applied-Cryptography.git
+cd Applied-Cryptography-SIS1
 
 # Compile the project
 javac -d bin -sourcepath src src/**/*.java
@@ -118,7 +118,7 @@ java -cp bin test.AESConsoleApp
 javac -d bin -sourcepath src src/**/*.java
 
 # Run
-java -cp bin Main
+java -cp bin test.AESConsoleApp
 ```
 
 ### First Encryption
