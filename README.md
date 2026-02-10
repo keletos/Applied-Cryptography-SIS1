@@ -236,7 +236,7 @@ public class Example {
 ## 📁 Project Structure
 
 ```
-mycrypto/
+Applied-Criptography-SIS1/
 ├── src/
 │   ├── core/                    # AES core implementation
 │   │   ├── AESCore.java         # Interface
