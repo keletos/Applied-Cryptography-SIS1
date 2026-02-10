@@ -357,9 +357,9 @@ This is an educational project. Contributions for learning purposes are welcome!
 ## 👥 Team
 
 ### Core Team
-- **[Your Name]** - Modes of Operation Implementation
-- **[Team Member 1]** - AES Core Implementation
-- **[Team Member 2]** - Random Number Generation
+- **Nursultan Atamuratov** - Modes of Operation Implementation
+- **Nursultan A** - AES Core Implementation
+- **Ramazan** - Random Number Generation
 
 ### Acknowledgments
 - NIST for AES specification and test vectors
@@ -391,12 +391,6 @@ This implementation is intended for:
 - [NIST Test Vectors](https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program)
 - [GCM Specification (NIST SP 800-38D)](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf)
 
-## 📞 Contact
-
-- **Issues**: [GitHub Issues](https://github.com/YOUR_USERNAME/mycrypto/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/YOUR_USERNAME/mycrypto/discussions)
-
----
 
 <p align="center">
   Made with ❤️ for learning cryptography
